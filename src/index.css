@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url(./assets/fonts/SpaceGrotesk-Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpaceGrotesk-Bold";
+  src: url(./assets/fonts/SpaceGrotesk-Bold.otf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpaceGrotesk-Light";
+  src: url(./assets/fonts/SpaceGrotesk-Light.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@layer base {
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: theme('fontFamily.SpaceGrotesk');
+    background: theme('backgroundColor.bg-pry');
+  }
+
+  h1,h2,h3,h4,h5,h6{
+    color: theme('colors.text-base');
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: .3px;
+  }
+  
+  ul,li,ol, a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: normal;
+    list-style-type: none;
+    color: theme('colors.text-base');
+  }
+}
