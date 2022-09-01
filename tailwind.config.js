@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     screens: {
       sm: '450px',
-      md: '768px',
+      md: '658px',
       lg: '976px',
       xl: '1440px',
     },
@@ -37,7 +37,7 @@ module.exports = {
         'sm': '32px',
         '3xl': '42px',
         'round': '50%'
-      },
+      },'br-nav': '32px 0px 0px 32px'
     },
   },
   plugins: [],
